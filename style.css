@@ -15,17 +15,18 @@ header {
     flex-wrap: wrap;
     background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 header .fondoTitulo {
     width: 100%;
-    height: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
     color: white;
-    font-size: large;
+    font-size: x-large;
     justify-content: center;
 }
 
