@@ -13,5 +13,4 @@ window.addEventListener("scroll", () => {
         aside.style.position = "relative";
         aside.style.alignItems = "flex-end";
     }
-    console.log(window.scrollY)
 });

@@ -163,14 +163,27 @@ footer {
     background-color: #3a3a3a;
 }
 
+.cuestion {
+    margin-bottom: 100px;
+}
+
 .cuestion h2 {
     color: rgb(5, 141, 78);
     font-size: xx-large;
 }
 
-.cuestion p {
+.cuestion p, .cuestion ul {
     font-size: larger;
     line-height: 30px;
+}
+
+.cuestion .images {
+    width: 100%;
+    text-align: center;
+}
+
+.cuestion .images img {
+    width: 100%;
 }
 
 aside ol {
@@ -178,7 +191,7 @@ aside ol {
     border-radius: 10px;
 }
 
-aside ol li {
+aside ol li, footer ul li {
     line-height: 20px;
     cursor: pointer;
     margin-bottom: 10px;
