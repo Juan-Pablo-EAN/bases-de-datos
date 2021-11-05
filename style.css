@@ -142,21 +142,22 @@ section .newsContenedor {
 }
 
 .contenedor article {
-    width: 55%;
+    width: 1fr;
+    max-width: 55%;
     order: 2;
     padding: 0 10% 0 0;
     color: #262524;
 }
 
 .contenedor aside {
-    width: 20%;
+    padding-top: 20px;
+    width: 270px;
     height: inherit;
     order: 1;
     left: 5%;
     position: relative;
-    top: 10px;
     display: flex;
-    margin-right: 15%;
+    margin: 0px 15% 50px 0;
 }
 
 footer {
@@ -253,4 +254,24 @@ footer ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+@media screen and (max-width:960px) {
+    aside ol {
+        display: none;
+        width: 1px;
+    }
+    .contenedor {
+        justify-content: center;
+    }
+    .contenedor article {
+        width: 90%;
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .subtitulo h1 {
+        font-size: 27px;
+    }
 }
