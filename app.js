@@ -3,8 +3,15 @@ const articulo = document.querySelector(".articulo");
 const criterios = document.getElementById("criterios");
 const footer = document.querySelector(".ft");
 const topAside = aside.offsetTop;
+const barra = document.querySelector(".barraCarga");
+const alto = document.body.clientHeight;
 
 window.addEventListener("scroll", () => {
+    efectoAside();
+    barraDeCarga();
+});
+
+const efectoAside = () => {
     if (window.scrollY > topAside) {
         aside.style.position = "fixed";
         aside.style.top = "0px";
@@ -17,4 +24,9 @@ window.addEventListener("scroll", () => {
         aside.style.position = "relative";
         aside.style.alignItems = "flex-end";
     }
-});
+}
+
+const barraDeCarga = () => {
+    let anchoBarra = (window.scrollY * 100) / alto;
+    barra.style.width = `${anchoBarra}%`;
+}
