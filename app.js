@@ -34,7 +34,7 @@ const barraDeCarga = () => {
 }
 
 const redesVisibles = () => {
-    if(window.scrollY > window.screen.availHeight && window.scrollY < (alto - 500)){
+    if(window.scrollY > window.screen.availHeight && window.scrollY < (alto - 700)){
         redes.style.display = "flex";
     } else {
         redes.style.display = "none";
