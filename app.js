@@ -5,10 +5,12 @@ const footer = document.querySelector(".ft");
 const topAside = aside.offsetTop;
 const barra = document.querySelector(".barraCarga");
 const alto = document.body.clientHeight;
+const redes = document.querySelector(".redes");
 
 window.addEventListener("scroll", () => {
     efectoAside();
     barraDeCarga();
+    redesVisibles();
 });
 
 const efectoAside = () => {
@@ -29,4 +31,12 @@ const efectoAside = () => {
 const barraDeCarga = () => {
     let anchoBarra = (window.scrollY * 100) / alto;
     barra.style.width = `${anchoBarra}%`;
+}
+
+const redesVisibles = () => {
+    if(window.scrollY > window.screen.availHeight && window.scrollY < (alto - 500)){
+        redes.style.display = "flex";
+    } else {
+        redes.style.display = "none";
+    }
 }
