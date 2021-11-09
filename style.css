@@ -193,9 +193,13 @@ footer {
     font-size: xx-large;
 }
 
-.cuestion p, .cuestion ul {
+.cuestion p, .cuestion ul{
     font-size: larger;
     line-height: 30px;
+}
+
+.cuestion div ul li div ul {
+    font-size: large;
 }
 
 .cuestion .images {
@@ -309,4 +313,18 @@ footer ul {
 
 .parrafosUl {
     font-size: medium;
+}
+
+.cuestion .video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cuestion .video iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 340px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
