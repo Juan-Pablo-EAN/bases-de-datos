@@ -40,3 +40,5 @@ const redesVisibles = () => {
         redes.style.display = "none";
     }
 }
+
+//prueba
