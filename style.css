@@ -143,14 +143,37 @@ section .newsContenedor {
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: transparent;
     color: black;
     border-radius: 7px;
-    padding: 5% 0 5% 0;
+    padding: 0 0 5% 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    justify-content: center;
+}
+
+.newsContenedor .noticia:hover {
+    background-color: rgba(206, 225, 252, 0.308);
 }
 
 .noticia div {
     width: 100%;
+}
+
+.noticia1 .imagen{
+    background-image: url(https://revistabyte.es/wp-content/uploads/2021/04/nuubbha-dado-a-conocer-la-importancia-de-los-datacenters-para-las-empresas-las-cuales-buscan-cada-vez-mas-696x416.jpg.webp);
+}
+
+.noticia2 .imagen {
+    background-image: url(https://revistabyte.es/wp-content/uploads/2021/06/snowflake-nube-de-datos-696x464.jpg.webp);
+}
+
+.noticia3 .imagen {
+    background-image: url(https://revistabyte.es/wp-content/uploads/2019/08/codes-coding-data-2061168-696x464.jpg.webp);
+}
+
+.noticia4 .imagen {
+    background-image: url(https://revistabyte.es/wp-content/uploads/2019/01/20190117_112840-696x338.jpg.webp);
 }
 
 .noticia .imagen {
@@ -158,23 +181,38 @@ section .newsContenedor {
     height: 200px;
     display: flex;
     justify-content: center;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    transition: all 0.5s ease;
+}
+
+.noticia .imagen:hover {
+    background-size: 110% 110%;
 }
 
 .noticia .title {
-    height: 10%;
+    height: auto;
     display: flex;
     align-items: center;
     font-size: large;
     font-weight: bold;
-    border-top: 1px solid gray;
     border-bottom: 1px solid gray;
-    padding: 0 5% 0 5%;
-    color: rgb(5, 141, 78);
+    padding: 3%;
+    color: rgb(0, 180, 96);
+}
+
+.noticia .title:hover{
+    text-decoration: underline;
 }
 
 .noticia .texto {
     height: 30%;    
     padding: 0 5% 0 5%;
+    font-size: small;
+    color: rgb(218, 218, 218);
 }
 
 .noticia .imagen img {
