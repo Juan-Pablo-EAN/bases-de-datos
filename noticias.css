@@ -1,0 +1,94 @@
+body {
+    color: white;
+    background-color: #3a3a3a;
+}
+
+header {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #3a3a3acc;
+    display: flex;
+    justify-content: center;
+}
+
+header div img {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+}
+
+nav ul li{
+    width: auto;
+    padding: 0;
+}
+
+nav ul li a {
+    width: 100%;
+    background-color: inherit;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article h1 {
+    font-size: 45px;
+    text-align: center;
+    color: rgb(0, 214, 114);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+section article {
+    width: 100%;
+    max-width: 70%;
+    font-size: larger;
+    line-height: 30px;
+}
+
+footer {
+    background-color: white;
+    color: #3a3a3a;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer .autor {
+    width: 100%;
+    min-height: 320px;
+}
+
+footer a {
+    color: #3a3a3a;
+}
+
+footer .logo {
+    width: 100%;
+}
+
+footer .logo img {
+    width: 120px;
+    background-color: #3a3a3a;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+.barraCarga {
+    width: 0%;
+}

@@ -14,17 +14,19 @@ window.addEventListener("scroll", () => {
 });
 
 const efectoAside = () => {
-    if (window.scrollY > topAside) {
-        aside.style.position = "fixed";
-        aside.style.top = "0px";
-    } else {
-        aside.style.position = "relative";
-        aside.style.alignItems = "flex-start";
-    }
-
-    if (window.scrollY > (footer.offsetTop - window.screen.height + 50)) { //50 es el margin bottom que tiene aside
-        aside.style.position = "relative";
-        aside.style.alignItems = "flex-end";
+    if(window.screen.availWidth > 960){
+        if (window.scrollY > topAside) {
+            aside.style.position = "fixed";
+            aside.style.top = "0px";
+        } else {
+            aside.style.position = "relative";
+            aside.style.alignItems = "flex-start";
+        }
+    
+        if (window.scrollY > (footer.offsetTop - window.screen.height + 50)) { //50 es el margin bottom que tiene aside
+            aside.style.position = "relative";
+            aside.style.alignItems = "flex-end";
+        }
     }
 }
 
@@ -40,5 +42,3 @@ const redesVisibles = () => {
         redes.style.display = "none";
     }
 }
-
-//prueba
